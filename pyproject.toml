@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctxtrim"
+version = "0.0.1"
+description = "Thread- and supersession-aware trimming of conversation context in long-running agents (pilot)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+# Data-only dependencies (Phase 0 download and metadata filtering). Not needed at runtime.
+data = ["huggingface_hub>=0.26", "pyarrow>=17"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ctxtrim = ["skill/*.md", "eval/*.md", "policies/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

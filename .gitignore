@@ -1,0 +1,23 @@
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+# Session text must never be committed or released.
+data/sessions/**
+!data/sessions/.gitkeep
+data/normalized/**
+!data/normalized/.gitkeep
+# Contains GitHub user and repo identifiers; keep local until the human decides.
+data/selection/
+# Needs records hold `what` and `anchor` text derived from sessions. Released only in the form the
+# human decides at Phase 6; ignored until then.
+data/labels/needs.jsonl
+# Model text about sessions (check items and notes) and human review packets (session text).
+data/labels/private/
+data/review/
+
+.DS_Store
+# Round 1 needs records: same session-derived text as needs.jsonl.
+data/labels/needs.v1.jsonl

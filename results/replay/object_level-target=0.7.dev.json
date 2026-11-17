@@ -1,0 +1,600 @@
+{
+ "policy": "object_level",
+ "settings": {
+  "target": 0.7
+ },
+ "split": "dev",
+ "date": "2026-11-16T22:03:25+00:00",
+ "policy_model": "claude-sonnet-5-5",
+ "judge_model": "claude-opus-5-5",
+ "keep_tool_results": 3,
+ "needs_continuation_turns": 3,
+ "cut_problems": [],
+ "summary": {
+  "cut_points": 12,
+  "mean_pruning_rate": 0.7846212864052674,
+  "strict_no_impact_rate": 0.0,
+  "no_impact_recall_rate": 0.08333333333333333,
+  "stale_content_rate": 0.25,
+  "dropped_current_state_rate": 0.9166666666666666
+ },
+ "cut_points": [
+  {
+   "cut_id": "s002.c1",
+   "cut_before": "m0213",
+   "conv_tokens_before": 13845,
+   "conv_tokens_after": 2297,
+   "tool_tokens": 4648,
+   "pruning_rate": 0.8340917298663777,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T21:58:27+00:00",
+   "counts": {
+    "need": {
+     "present": 3,
+     "captured": 1,
+     "recoverable": 3,
+     "lost": 1
+    },
+    "state": {
+     "present": 2,
+     "captured": 6,
+     "recoverable": 1,
+     "lost": 1
+    },
+    "old": {
+     "present": 0,
+     "captured": 2,
+     "recoverable": 3,
+     "lost": 2
+    },
+    "new": {
+     "present": 2,
+     "captured": 4,
+     "recoverable": 0,
+     "lost": 1
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n3"
+   ]
+  },
+  {
+   "cut_id": "s002.c2",
+   "cut_before": "m0336",
+   "conv_tokens_before": 20907,
+   "conv_tokens_after": 3465,
+   "tool_tokens": 10490,
+   "pruning_rate": 0.8342660352991821,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T21:58:50+00:00",
+   "counts": {
+    "need": {
+     "present": 3,
+     "captured": 0,
+     "recoverable": 1,
+     "lost": 5
+    },
+    "state": {
+     "present": 5,
+     "captured": 2,
+     "recoverable": 1,
+     "lost": 3
+    },
+    "old": {
+     "present": 2,
+     "captured": 0,
+     "recoverable": 1,
+     "lost": 8
+    },
+    "new": {
+     "present": 7,
+     "captured": 3,
+     "recoverable": 0,
+     "lost": 1
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n4",
+    "n5",
+    "n7",
+    "n8",
+    "n9"
+   ]
+  },
+  {
+   "cut_id": "s003.c1",
+   "cut_before": "m0202",
+   "conv_tokens_before": 4893,
+   "conv_tokens_after": 591,
+   "tool_tokens": 2621,
+   "pruning_rate": 0.8792152053954629,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T21:59:11+00:00",
+   "counts": {
+    "need": {
+     "present": 1,
+     "captured": 1,
+     "recoverable": 2,
+     "lost": 2
+    },
+    "state": {
+     "present": 1,
+     "captured": 5,
+     "recoverable": 1,
+     "lost": 1
+    },
+    "old": {
+     "present": 0,
+     "captured": 0,
+     "recoverable": 2,
+     "lost": 2
+    },
+    "new": {
+     "present": 0,
+     "captured": 2,
+     "recoverable": 0,
+     "lost": 2
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n2",
+    "n6"
+   ]
+  },
+  {
+   "cut_id": "s003.c2",
+   "cut_before": "m0320",
+   "conv_tokens_before": 7527,
+   "conv_tokens_after": 1518,
+   "tool_tokens": 4436,
+   "pruning_rate": 0.7983260263053009,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T21:59:32+00:00",
+   "counts": {
+    "need": {
+     "present": 1,
+     "captured": 0,
+     "recoverable": 2,
+     "lost": 2
+    },
+    "state": {
+     "present": 1,
+     "captured": 6,
+     "recoverable": 2,
+     "lost": 1
+    },
+    "old": {
+     "present": 0,
+     "captured": 0,
+     "recoverable": 7,
+     "lost": 3
+    },
+    "new": {
+     "present": 1,
+     "captured": 6,
+     "recoverable": 0,
+     "lost": 3
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n4",
+    "n5"
+   ]
+  },
+  {
+   "cut_id": "s011.c1",
+   "cut_before": "m0479",
+   "conv_tokens_before": 12148,
+   "conv_tokens_after": 3387,
+   "tool_tokens": 7381,
+   "pruning_rate": 0.721188673032598,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T22:00:01+00:00",
+   "counts": {
+    "need": {
+     "present": 3,
+     "captured": 3,
+     "recoverable": 1,
+     "lost": 2
+    },
+    "state": {
+     "present": 4,
+     "captured": 1,
+     "recoverable": 2,
+     "lost": 0
+    },
+    "old": {
+     "present": 3,
+     "captured": 2,
+     "recoverable": 0,
+     "lost": 3
+    },
+    "new": {
+     "present": 5,
+     "captured": 3,
+     "recoverable": 0,
+     "lost": 0
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n8",
+    "n9"
+   ]
+  },
+  {
+   "cut_id": "s011.c2",
+   "cut_before": "m0960",
+   "conv_tokens_before": 19897,
+   "conv_tokens_after": 9499,
+   "tool_tokens": 12938,
+   "pruning_rate": 0.5225913454289591,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T22:00:30+00:00",
+   "counts": {
+    "need": {
+     "present": 5,
+     "captured": 4,
+     "recoverable": 2,
+     "lost": 1
+    },
+    "state": {
+     "present": 9,
+     "captured": 2,
+     "recoverable": 0,
+     "lost": 0
+    },
+    "old": {
+     "present": 6,
+     "captured": 1,
+     "recoverable": 0,
+     "lost": 7
+    },
+    "new": {
+     "present": 10,
+     "captured": 2,
+     "recoverable": 0,
+     "lost": 2
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": true,
+   "dropped_current_state": false,
+   "lost_need_ids": [
+    "n8"
+   ]
+  },
+  {
+   "cut_id": "s013.c1",
+   "cut_before": "m0135",
+   "conv_tokens_before": 4409,
+   "conv_tokens_after": 841,
+   "tool_tokens": 3512,
+   "pruning_rate": 0.809253799047403,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T22:00:52+00:00",
+   "counts": {
+    "need": {
+     "present": 1,
+     "captured": 1,
+     "recoverable": 2,
+     "lost": 2
+    },
+    "state": {
+     "present": 3,
+     "captured": 3,
+     "recoverable": 0,
+     "lost": 5
+    },
+    "old": {
+     "present": 0,
+     "captured": 0,
+     "recoverable": 1,
+     "lost": 3
+    },
+    "new": {
+     "present": 0,
+     "captured": 1,
+     "recoverable": 0,
+     "lost": 3
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n5",
+    "n6"
+   ]
+  },
+  {
+   "cut_id": "s013.c2",
+   "cut_before": "m0195",
+   "conv_tokens_before": 5919,
+   "conv_tokens_after": 897,
+   "tool_tokens": 3169,
+   "pruning_rate": 0.8484541307653319,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T22:01:12+00:00",
+   "counts": {
+    "need": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 1,
+     "lost": 2
+    },
+    "state": {
+     "present": 4,
+     "captured": 1,
+     "recoverable": 1,
+     "lost": 7
+    },
+    "old": {
+     "present": 0,
+     "captured": 3,
+     "recoverable": 0,
+     "lost": 7
+    },
+    "new": {
+     "present": 2,
+     "captured": 3,
+     "recoverable": 0,
+     "lost": 5
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n3",
+    "n4"
+   ]
+  },
+  {
+   "cut_id": "s015.c1",
+   "cut_before": "m0121",
+   "conv_tokens_before": 7327,
+   "conv_tokens_after": 1622,
+   "tool_tokens": 5043,
+   "pruning_rate": 0.7786269960420363,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T22:01:36+00:00",
+   "counts": {
+    "need": {
+     "present": 3,
+     "captured": 2,
+     "recoverable": 5,
+     "lost": 0
+    },
+    "state": {
+     "present": 6,
+     "captured": 3,
+     "recoverable": 4,
+     "lost": 0
+    },
+    "old": {
+     "present": 1,
+     "captured": 1,
+     "recoverable": 0,
+     "lost": 5
+    },
+    "new": {
+     "present": 2,
+     "captured": 4,
+     "recoverable": 1,
+     "lost": 0
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": true,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": []
+  },
+  {
+   "cut_id": "s015.c2",
+   "cut_before": "m0221",
+   "conv_tokens_before": 9282,
+   "conv_tokens_after": 2036,
+   "tool_tokens": 4068,
+   "pruning_rate": 0.7806507218271924,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T22:02:02+00:00",
+   "counts": {
+    "need": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 1,
+     "lost": 2
+    },
+    "state": {
+     "present": 7,
+     "captured": 2,
+     "recoverable": 1,
+     "lost": 2
+    },
+    "old": {
+     "present": 2,
+     "captured": 1,
+     "recoverable": 3,
+     "lost": 6
+    },
+    "new": {
+     "present": 4,
+     "captured": 2,
+     "recoverable": 2,
+     "lost": 4
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n4",
+    "n7"
+   ]
+  },
+  {
+   "cut_id": "s017.c1",
+   "cut_before": "m0413",
+   "conv_tokens_before": 16736,
+   "conv_tokens_after": 2843,
+   "tool_tokens": 9808,
+   "pruning_rate": 0.830126673040153,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T22:02:26+00:00",
+   "counts": {
+    "need": {
+     "present": 2,
+     "captured": 0,
+     "recoverable": 4,
+     "lost": 3
+    },
+    "state": {
+     "present": 2,
+     "captured": 4,
+     "recoverable": 1,
+     "lost": 2
+    },
+    "old": {
+     "present": 2,
+     "captured": 2,
+     "recoverable": 0,
+     "lost": 10
+    },
+    "new": {
+     "present": 4,
+     "captured": 6,
+     "recoverable": 1,
+     "lost": 3
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": true,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n3",
+    "n6",
+    "n7"
+   ]
+  },
+  {
+   "cut_id": "s017.c2",
+   "cut_before": "m0625",
+   "conv_tokens_before": 32218,
+   "conv_tokens_after": 7131,
+   "tool_tokens": 13529,
+   "pruning_rate": 0.77866410081321,
+   "policy_model_calls": 1,
+   "check_calls": 1,
+   "check_model": [
+    "claude-opus-5-5"
+   ],
+   "check_date": "2026-11-16T22:02:58+00:00",
+   "counts": {
+    "need": {
+     "present": 3,
+     "captured": 0,
+     "recoverable": 1,
+     "lost": 4
+    },
+    "state": {
+     "present": 8,
+     "captured": 2,
+     "recoverable": 3,
+     "lost": 1
+    },
+    "old": {
+     "present": 1,
+     "captured": 3,
+     "recoverable": 2,
+     "lost": 16
+    },
+    "new": {
+     "present": 7,
+     "captured": 6,
+     "recoverable": 2,
+     "lost": 7
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": true,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n3",
+    "n4",
+    "n5",
+    "n8"
+   ]
+  }
+ ]
+}

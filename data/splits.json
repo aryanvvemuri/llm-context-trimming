@@ -1,0 +1,341 @@
+{
+ "seed": 20261116,
+ "rule": "1. Eligible: content-filter status \"ok\" and >= MIN_REVERSALS validated reversals.\n  2. Draw: eligible sessions sorted by session_id, then random.Random(SEED).shuffle; walk the\n     shuffled order and take a session only while its user key and its repo each have fewer than\n     PER_GROUP_CAP taken. Stop at N_SESSIONS. Fewer than N_SESSIONS -> stop (PLAN ASK).\n  3. Pilot ids s001..s018 in draw order.\n  4. Split by user: sessions are grouped into connected components (two sessions are linked when\n     they share a user key or a repo), so no user and no repo can straddle the splits. Components\n     sorted by their first pilot id are shuffled with a fresh random.Random(SEED); dev is the first\n     subset, in that order (depth-first search), whose sizes sum to N_DEV; the rest is test. If no\n     such subset exists, the grouping falls back to user only and the straddling repos are\n     reported (never silently).",
+ "min_reversals": 5,
+ "per_group_cap": 2,
+ "n_content_filter": 60,
+ "content_filter_status": {
+  "ok": 57,
+  "invalid": 3
+ },
+ "n_eligible": 54,
+ "n_dev": 6,
+ "n_test": 12,
+ "repos_straddling_splits": 0,
+ "sessions": [
+  {
+   "pilot_id": "s001",
+   "session_id": "19840874-a105-4de7-82da-afdf65d84c22",
+   "split": "test",
+   "user_turns_plain": 32,
+   "conv_tokens": 20321,
+   "conv_share_after": 0.6554,
+   "reversals": 6,
+   "reversals_by_kind": {
+    "decision_revised": 2,
+    "constraint_changed": 0,
+    "plan_revised": 0,
+    "hypothesis_refuted": 4,
+    "abandoned": 0,
+    "question_resolved": 0,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s002",
+   "session_id": "43003030-6411-41de-8c03-b4da450d5896",
+   "split": "dev",
+   "user_turns_plain": 52,
+   "conv_tokens": 28974,
+   "conv_share_after": 0.7572,
+   "reversals": 9,
+   "reversals_by_kind": {
+    "decision_revised": 2,
+    "constraint_changed": 1,
+    "plan_revised": 1,
+    "hypothesis_refuted": 3,
+    "abandoned": 1,
+    "question_resolved": 1,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s003",
+   "session_id": "1fbe0976-5d23-4331-a694-506d23771356",
+   "split": "dev",
+   "user_turns_plain": 29,
+   "conv_tokens": 8213,
+   "conv_share_after": 0.6308,
+   "reversals": 6,
+   "reversals_by_kind": {
+    "decision_revised": 4,
+    "constraint_changed": 0,
+    "plan_revised": 0,
+    "hypothesis_refuted": 1,
+    "abandoned": 0,
+    "question_resolved": 1,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s004",
+   "session_id": "75bb3513-cc48-41d6-a124-6678450fcf61",
+   "split": "test",
+   "user_turns_plain": 42,
+   "conv_tokens": 13599,
+   "conv_share_after": 0.5526,
+   "reversals": 6,
+   "reversals_by_kind": {
+    "decision_revised": 2,
+    "constraint_changed": 0,
+    "plan_revised": 1,
+    "hypothesis_refuted": 2,
+    "abandoned": 1,
+    "question_resolved": 0,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s005",
+   "session_id": "a21b820b-bc59-4f2d-9fba-04083e32149d",
+   "split": "test",
+   "user_turns_plain": 47,
+   "conv_tokens": 25955,
+   "conv_share_after": 0.6875,
+   "reversals": 11,
+   "reversals_by_kind": {
+    "decision_revised": 2,
+    "constraint_changed": 2,
+    "plan_revised": 4,
+    "hypothesis_refuted": 2,
+    "abandoned": 1,
+    "question_resolved": 0,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s006",
+   "session_id": "0ad65710-ef89-4cd9-98b2-9e0c58df1ab5",
+   "split": "test",
+   "user_turns_plain": 28,
+   "conv_tokens": 41719,
+   "conv_share_after": 0.8433,
+   "reversals": 12,
+   "reversals_by_kind": {
+    "decision_revised": 1,
+    "constraint_changed": 1,
+    "plan_revised": 8,
+    "hypothesis_refuted": 0,
+    "abandoned": 1,
+    "question_resolved": 0,
+    "restated": 1
+   }
+  },
+  {
+   "pilot_id": "s007",
+   "session_id": "3ad7a41f-4c08-4eae-89fc-3876a292946d",
+   "split": "test",
+   "user_turns_plain": 28,
+   "conv_tokens": 19484,
+   "conv_share_after": 0.6115,
+   "reversals": 6,
+   "reversals_by_kind": {
+    "decision_revised": 1,
+    "constraint_changed": 0,
+    "plan_revised": 1,
+    "hypothesis_refuted": 3,
+    "abandoned": 0,
+    "question_resolved": 1,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s008",
+   "session_id": "1e2b0e3c-1e21-4ee8-9e29-822a0c66a2a2",
+   "split": "test",
+   "user_turns_plain": 57,
+   "conv_tokens": 59660,
+   "conv_share_after": 0.7998,
+   "reversals": 11,
+   "reversals_by_kind": {
+    "decision_revised": 3,
+    "constraint_changed": 0,
+    "plan_revised": 2,
+    "hypothesis_refuted": 4,
+    "abandoned": 2,
+    "question_resolved": 0,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s009",
+   "session_id": "1ed44dc8-7f20-4ec7-a768-c04d52077f37",
+   "split": "test",
+   "user_turns_plain": 28,
+   "conv_tokens": 21678,
+   "conv_share_after": 0.7441,
+   "reversals": 5,
+   "reversals_by_kind": {
+    "decision_revised": 0,
+    "constraint_changed": 0,
+    "plan_revised": 0,
+    "hypothesis_refuted": 4,
+    "abandoned": 0,
+    "question_resolved": 1,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s010",
+   "session_id": "5c2b9f32-5c2b-46aa-a105-37f4fe9e83d9",
+   "split": "test",
+   "user_turns_plain": 55,
+   "conv_tokens": 33104,
+   "conv_share_after": 0.6823,
+   "reversals": 15,
+   "reversals_by_kind": {
+    "decision_revised": 7,
+    "constraint_changed": 2,
+    "plan_revised": 2,
+    "hypothesis_refuted": 0,
+    "abandoned": 1,
+    "question_resolved": 0,
+    "restated": 3
+   }
+  },
+  {
+   "pilot_id": "s011",
+   "session_id": "0959d8ff-f53e-4750-a836-35d84e1c98de",
+   "split": "dev",
+   "user_turns_plain": 34,
+   "conv_tokens": 24562,
+   "conv_share_after": 0.5745,
+   "reversals": 8,
+   "reversals_by_kind": {
+    "decision_revised": 2,
+    "constraint_changed": 0,
+    "plan_revised": 3,
+    "hypothesis_refuted": 2,
+    "abandoned": 1,
+    "question_resolved": 0,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s012",
+   "session_id": "7d277faa-cf4c-44a4-aed1-62a90a6ba0c3",
+   "split": "test",
+   "user_turns_plain": 104,
+   "conv_tokens": 23672,
+   "conv_share_after": 0.6499,
+   "reversals": 9,
+   "reversals_by_kind": {
+    "decision_revised": 5,
+    "constraint_changed": 0,
+    "plan_revised": 1,
+    "hypothesis_refuted": 2,
+    "abandoned": 1,
+    "question_resolved": 0,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s013",
+   "session_id": "e702e383-4c31-4024-8085-cd28baf79fd8",
+   "split": "dev",
+   "user_turns_plain": 29,
+   "conv_tokens": 7418,
+   "conv_share_after": 0.6366,
+   "reversals": 6,
+   "reversals_by_kind": {
+    "decision_revised": 4,
+    "constraint_changed": 0,
+    "plan_revised": 0,
+    "hypothesis_refuted": 1,
+    "abandoned": 1,
+    "question_resolved": 0,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s014",
+   "session_id": "e0372d67-f293-4b4e-a098-3f12565b0d74",
+   "split": "test",
+   "user_turns_plain": 28,
+   "conv_tokens": 6886,
+   "conv_share_after": 0.7013,
+   "reversals": 7,
+   "reversals_by_kind": {
+    "decision_revised": 3,
+    "constraint_changed": 0,
+    "plan_revised": 1,
+    "hypothesis_refuted": 1,
+    "abandoned": 1,
+    "question_resolved": 1,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s015",
+   "session_id": "9723ce83-fed2-4478-9c30-d826a0e0925d",
+   "split": "dev",
+   "user_turns_plain": 30,
+   "conv_tokens": 9766,
+   "conv_share_after": 0.6258,
+   "reversals": 9,
+   "reversals_by_kind": {
+    "decision_revised": 8,
+    "constraint_changed": 0,
+    "plan_revised": 0,
+    "hypothesis_refuted": 0,
+    "abandoned": 0,
+    "question_resolved": 1,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s016",
+   "session_id": "d9dc60d1-9595-45bb-bf92-27c6733adad1",
+   "split": "test",
+   "user_turns_plain": 32,
+   "conv_tokens": 9302,
+   "conv_share_after": 0.9231,
+   "reversals": 5,
+   "reversals_by_kind": {
+    "decision_revised": 2,
+    "constraint_changed": 1,
+    "plan_revised": 1,
+    "hypothesis_refuted": 0,
+    "abandoned": 1,
+    "question_resolved": 0,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s017",
+   "session_id": "7b2777b1-8075-41f4-a62a-cbfc1b76c01b",
+   "split": "dev",
+   "user_turns_plain": 66,
+   "conv_tokens": 69305,
+   "conv_share_after": 0.8181,
+   "reversals": 14,
+   "reversals_by_kind": {
+    "decision_revised": 4,
+    "constraint_changed": 2,
+    "plan_revised": 1,
+    "hypothesis_refuted": 6,
+    "abandoned": 1,
+    "question_resolved": 0,
+    "restated": 0
+   }
+  },
+  {
+   "pilot_id": "s018",
+   "session_id": "0bd1df57-e44c-4c38-9b3c-8be45c5d2203",
+   "split": "test",
+   "user_turns_plain": 29,
+   "conv_tokens": 15630,
+   "conv_share_after": 0.6862,
+   "reversals": 9,
+   "reversals_by_kind": {
+    "decision_revised": 4,
+    "constraint_changed": 0,
+    "plan_revised": 1,
+    "hypothesis_refuted": 1,
+    "abandoned": 2,
+    "question_resolved": 1,
+    "restated": 0
+   }
+  }
+ ]
+}

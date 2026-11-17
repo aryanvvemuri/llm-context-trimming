@@ -1,0 +1,587 @@
+{
+ "policy": "recency",
+ "settings": {
+  "n_turns": 10
+ },
+ "split": "dev",
+ "date": "2026-11-16T21:35:14+00:00",
+ "judge_model": "claude-opus-5-5",
+ "keep_tool_results": 3,
+ "needs_continuation_turns": 3,
+ "cut_problems": [],
+ "summary": {
+  "cut_points": 12,
+  "mean_pruning_rate": 0.5887496234825631,
+  "strict_no_impact_rate": 0.08333333333333333,
+  "no_impact_recall_rate": 0.08333333333333333,
+  "stale_content_rate": 0.0,
+  "dropped_current_state_rate": 1.0
+ },
+ "cut_points": [
+  {
+   "cut_id": "s002.c1",
+   "cut_before": "m0213",
+   "conv_tokens_before": 13845,
+   "conv_tokens_after": 7333,
+   "tool_tokens": 4648,
+   "pruning_rate": 0.47035030697002533,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 6,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    },
+    "state": {
+     "present": 6,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 4
+    },
+    "old": {
+     "present": 2,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 5
+    },
+    "new": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 3
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n3",
+    "n7"
+   ]
+  },
+  {
+   "cut_id": "s002.c2",
+   "cut_before": "m0336",
+   "conv_tokens_before": 20907,
+   "conv_tokens_after": 6616,
+   "tool_tokens": 10490,
+   "pruning_rate": 0.6835509637920314,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 6,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 3
+    },
+    "state": {
+     "present": 6,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 5
+    },
+    "old": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 6
+    },
+    "new": {
+     "present": 8,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 3
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n4",
+    "n5",
+    "n8"
+   ]
+  },
+  {
+   "cut_id": "s003.c1",
+   "cut_before": "m0202",
+   "conv_tokens_before": 4893,
+   "conv_tokens_after": 3198,
+   "tool_tokens": 2621,
+   "pruning_rate": 0.3464132434089515,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 1
+    },
+    "state": {
+     "present": 6,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    },
+    "old": {
+     "present": 1,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 3
+    },
+    "new": {
+     "present": 3,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 1
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n5"
+   ]
+  },
+  {
+   "cut_id": "s003.c2",
+   "cut_before": "m0320",
+   "conv_tokens_before": 7527,
+   "conv_tokens_after": 2604,
+   "tool_tokens": 4436,
+   "pruning_rate": 0.6540454364288562,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 0
+    },
+    "state": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 5
+    },
+    "old": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 6
+    },
+    "new": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 5
+    }
+   },
+   "strict_no_impact": true,
+   "no_impact_recall": true,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": []
+  },
+  {
+   "cut_id": "s011.c1",
+   "cut_before": "m0479",
+   "conv_tokens_before": 12148,
+   "conv_tokens_after": 5384,
+   "tool_tokens": 7381,
+   "pruning_rate": 0.5567994731643069,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 7,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    },
+    "state": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    },
+    "old": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 3
+    },
+    "new": {
+     "present": 6,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n7",
+    "n9"
+   ]
+  },
+  {
+   "cut_id": "s011.c2",
+   "cut_before": "m0960",
+   "conv_tokens_before": 19897,
+   "conv_tokens_after": 6309,
+   "tool_tokens": 12938,
+   "pruning_rate": 0.6829170226667336,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 7
+    },
+    "state": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 7
+    },
+    "old": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 10
+    },
+    "new": {
+     "present": 6,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 8
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n1",
+    "n4",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ]
+  },
+  {
+   "cut_id": "s013.c1",
+   "cut_before": "m0135",
+   "conv_tokens_before": 4409,
+   "conv_tokens_after": 2465,
+   "tool_tokens": 3512,
+   "pruning_rate": 0.44091630755273303,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 3,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 3
+    },
+    "state": {
+     "present": 7,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 4
+    },
+    "old": {
+     "present": 2,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    },
+    "new": {
+     "present": 2,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n1",
+    "n2",
+    "n4"
+   ]
+  },
+  {
+   "cut_id": "s013.c2",
+   "cut_before": "m0195",
+   "conv_tokens_before": 5919,
+   "conv_tokens_after": 2977,
+   "tool_tokens": 3169,
+   "pruning_rate": 0.49704341949653663,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 3
+    },
+    "state": {
+     "present": 6,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 7
+    },
+    "old": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 5
+    },
+    "new": {
+     "present": 8,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n4",
+    "n6",
+    "n7"
+   ]
+  },
+  {
+   "cut_id": "s015.c1",
+   "cut_before": "m0121",
+   "conv_tokens_before": 7327,
+   "conv_tokens_after": 2994,
+   "tool_tokens": 5043,
+   "pruning_rate": 0.5913743687730313,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 6
+    },
+    "state": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 8
+    },
+    "old": {
+     "present": 3,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 4
+    },
+    "new": {
+     "present": 5,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n1",
+    "n2",
+    "n3",
+    "n6",
+    "n8",
+    "n10"
+   ]
+  },
+  {
+   "cut_id": "s015.c2",
+   "cut_before": "m0221",
+   "conv_tokens_before": 9282,
+   "conv_tokens_after": 2595,
+   "tool_tokens": 4068,
+   "pruning_rate": 0.7204266321913381,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 2,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 5
+    },
+    "state": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 8
+    },
+    "old": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 8
+    },
+    "new": {
+     "present": 6,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 6
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7"
+   ]
+  },
+  {
+   "cut_id": "s017.c1",
+   "cut_before": "m0413",
+   "conv_tokens_before": 16736,
+   "conv_tokens_after": 6578,
+   "tool_tokens": 9808,
+   "pruning_rate": 0.6069550669216062,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 7,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 2
+    },
+    "state": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 5
+    },
+    "old": {
+     "present": 3,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 11
+    },
+    "new": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 10
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n6",
+    "n9"
+   ]
+  },
+  {
+   "cut_id": "s017.c2",
+   "cut_before": "m0625",
+   "conv_tokens_before": 32218,
+   "conv_tokens_after": 5986,
+   "tool_tokens": 13529,
+   "pruning_rate": 0.8142032404246073,
+   "policy_model_calls": 0,
+   "check_calls": 0,
+   "check_model": null,
+   "check_date": null,
+   "counts": {
+    "need": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 4
+    },
+    "state": {
+     "present": 3,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 11
+    },
+    "old": {
+     "present": 4,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 18
+    },
+    "new": {
+     "present": 7,
+     "captured": 0,
+     "recoverable": 0,
+     "lost": 15
+    }
+   },
+   "strict_no_impact": false,
+   "no_impact_recall": false,
+   "stale_content": false,
+   "dropped_current_state": true,
+   "lost_need_ids": [
+    "n1",
+    "n3",
+    "n4",
+    "n6"
+   ]
+  }
+ ]
+}
